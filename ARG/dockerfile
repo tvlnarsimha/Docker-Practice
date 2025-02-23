@@ -1,4 +1,4 @@
-ARG version
-FROM almalinux:${version}
+ARG TAG=9
+FROM almalinux:${TAG}
 #RUN cat /etc/*release
 CMD [ "sleep","80"]
