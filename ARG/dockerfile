@@ -3,6 +3,7 @@ FROM almalinux:${TAG}
 #RUN cat /etc/*release
 ARG COURSE=Docker
 ARG TRAINER=munna
-ENV Duration=120hrs
+ARG Duration=120hrs
+ENV Duration=${Duration}
 RUN echo "Course is: ${COURSE}, Trainer is: ${TRAINER}, Duration is: ${Duration}"
 CMD [ "sleep","80"]
