@@ -1,4 +1,4 @@
 ARG TAG=latest
 FROM almalinux:${TAG}
 #RUN cat /etc/*release
-CMD [ "SLEEP","80"]
+CMD [ "sleep","80"]
