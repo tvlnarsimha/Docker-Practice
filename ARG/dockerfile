@@ -1,4 +1,7 @@
 ARG TAG=9
 FROM almalinux:${TAG}
 #RUN cat /etc/*release
+ARG COURSE
+ARG TRAINER
+RUN echo "Course is: ${COURSE}, Trainer is: ${TRAINER}"
 CMD [ "sleep","80"]
