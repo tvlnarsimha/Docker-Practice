@@ -1,4 +1,4 @@
-ARG version
-FROM almalinux:${version}
+ARG TAG=latest
+FROM almalinux:${TAG}
 #RUN cat /etc/*release
 CMD [ "SLEPP",'80' ]
